@@ -1,0 +1,231 @@
+:root {
+  --main-color: lightgreen;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 10px 0px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid lightgray;
+}
+
+header p {
+  float: left;
+  width: 100px;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+header .header-nav-link ul {
+  margin: 0px 10px;
+  padding: 0px;
+  float: right;
+}
+
+.header-nav-link li {
+  display: inline-block;
+  margin: 0px;
+  margin-left: 0px;
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+  height: 1170px;
+}
+
+main .main-blog{
+  margin: 10px;
+  width: 755px;
+  height: 1154px;
+  float: left;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+
+main .main-header {
+  width: 80px;
+  margin: 0px 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .blog {
+  margin: 10px 10px;
+  width: 730px;
+  height: auto;
+  padding: 10px 0px;
+  border: 1px solid lightgray;
+}
+
+main .blog:hover {
+  border: 1px solid var(--main-color);  
+}
+
+main .blog-header {
+  font-weight: bold;
+  margin: 0px 0px;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+main .blog-content {
+  height: auto;
+}
+
+main .blog-content-text {
+  margin: 0px;
+  padding: 10px 10px;
+  width: inherit;
+  height: inherit;
+}
+
+.main-navigation {
+  width: 570px;
+  height: inherit;
+  float: right;
+}
+
+.top-blogs {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  width: 560px;
+  height: 350px;
+  border: 1px solid lightgray;
+}
+
+.top-blog-header {
+  margin: auto 20px;
+  font-weight: bold;
+}
+
+.top-blog-topic {
+  margin: 10px;
+  display: block;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.top-blog-topic:hover {
+  border: 1px solid lightgreen;
+}
+
+.search-blog {
+  width: 500px;
+  height: auto;
+}
+
+.search-form {
+  padding: 10px;
+  width: 560px;
+  height: auto;
+  border: 1px solid lightgray;
+}
+
+.search-form #topic, .search-button {
+  font-size: 16px;
+  border: none;
+}
+
+.search-form #topic:focus {
+  border: 1px solid green;  
+}
+
+
+.search-form #search-topic {
+  margin-right: 10px;
+  width: 436px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.search-button {
+  padding: 10px 20px;
+}
+
+.search-button:hover {
+  padding: 10px 20px;
+  background: lightcyan;
+}
+
+.search-results {
+  margin: 10px 0px;
+  padding: 10px;
+  width: auto;
+  height: 200px;
+  border: 1px solid lightgray;
+}
+
+.add-blog {
+  width: 560px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px 0px;
+  background: lightyellow;
+  border: 1px solid lightgray;
+}
+
+.add-blog-header {
+  width: 80px;
+  margin: 0px;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+.add-blog input {
+  margin: 10px;
+  margin-left: 25px;
+  padding: 10px;
+  width: 410px;
+  border: 1px solid lightgray;
+  font-size: 16px;
+}
+
+.add-blog .content {
+  margin: 10px auto;
+  float: left;
+  
+}
+
+.add-blog textarea {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.add-blog-btn {
+  margin: auto 15px;
+  padding: 10px 20px;
+  float: right;
+  border: none;
+  background: lightgray;
+}
+
+.add-blog-btn:hover {
+  background: lightgreen;
+}
+
+main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
