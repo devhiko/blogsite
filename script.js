@@ -16,6 +16,9 @@ window.addEventListener("load", () => {
     const topicval = document.getElementById("blog-topic").value;
     // içeriğin metni
     const contentval = document.getElementById("blog-content").value;
+    // gelen verileri yerel depoya attık.
+    localStorage.setItem('topic', topicval);
+    localStorage.setItem('content', contentval);
     // eger içerisi boşsa...
     if (!topicval || !contentval) {
       alert("Lütfen bir konu ve içerik girin: ");
@@ -45,7 +48,6 @@ window.addEventListener("load", () => {
       // her seferinde yeni bilgi girmek için formu sıfırla.
       form.reset();
     }
-
     // arama fonksiyonu ekle (search & regex)
 
   })
