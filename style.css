@@ -1,3 +1,5 @@
+/* Globals */
+/* TODO: Edit  */
 :root {
   --main-color: lightgreen;
   --border-color: lightgray;
@@ -15,13 +17,34 @@ a {
   text-decoration: none;
 }
 
-header a:hover {
-  color: var(--main-color);
+li {
+  list-style-type: none;
 }
 
 body {
   margin: 0;
 }
+
+main,
+.main-blog,
+.blog,
+.top-blogs,
+.top-blog-topic,
+.search-form,
+#search-topic,
+.search-results,
+.add-blog,
+.add-blog input,
+.add-blog textarea,
+footer {
+  border: var(--border);
+}
+
+/* Globals End */
+
+/* MAIN PAGE START */
+
+/* Header  */
 
 header {
   padding: 10px 0px;
@@ -39,7 +62,7 @@ header p {
   font-size: 16px;
 }
 
-header .header-nav-link ul {
+.header-nav-link ul {
   margin: 0px 10px;
   padding: 0px;
   float: right;
@@ -52,12 +75,22 @@ header .header-nav-link ul {
   padding: 10px;
 }
 
+header a:hover {
+  color: var(--main-color);
+}
+
+/* Header End */
+
+/* Main */
+
 main {
   width: 100%;
   height: 1170px;
 }
 
-main .main-blog {
+/* Blogs */
+
+.main-blog {
   margin: 10px;
   width: 755px;
   height: 1154px;
@@ -65,22 +98,7 @@ main .main-blog {
   overflow: hidden;
 }
 
-main,
-main .main-blog,
-main .blog,
-.top-blogs,
-.top-blog-topic,
-.search-form,
-.search-form #search-topic,
-.search-results,
-.add-blog,
-.add-blog input,
-.add-blog textarea,
-footer {
-  border: var(--border);
-}
-
-main .main-header {
+.main-header {
   width: 80px;
   margin: 0px 10px;
   padding: 5px 0px;
@@ -88,18 +106,18 @@ main .main-header {
   font-weight: bold;
 }
 
-main .blog {
+.blog {
   margin: 10px 10px;
   width: 730px;
   height: auto;
   padding: 10px 0px;
 }
 
-main .blog:hover {
+.blog:hover {
   border: 1px solid var(--main-color);
 }
 
-main .blog-header {
+.blog-header {
   font-weight: bold;
   margin: 0px 0px;
   padding: 0px 10px;
@@ -107,11 +125,11 @@ main .blog-header {
   color: black;
 }
 
-main .blog-content {
+.blog-content {
   height: auto;
 }
 
-main .blog-content-text {
+.blog-content-text {
   margin: 0px;
   padding: 10px 10px;
   width: inherit;
@@ -123,6 +141,8 @@ main .blog-content-text {
   height: inherit;
   float: right;
 }
+
+/* Top Blogs */
 
 .top-blogs {
   padding: 10px 0px;
@@ -146,6 +166,8 @@ main .blog-content-text {
   border: 1px solid var(--main-color);
 }
 
+/* Search Blog */
+
 .search-blog {
   width: 500px;
   height: auto;
@@ -157,18 +179,17 @@ main .blog-content-text {
   height: auto;
 }
 
-.search-form #topic,
+#topic,
 .search-button {
   font-size: 16px;
   border: none;
 }
 
-.search-form #topic:focus {
+#topic:focus {
   border: 1px solid green;
 }
 
-
-.search-form #search-topic {
+#search-topic {
   margin-right: 10px;
   width: 436px;
   padding: 10px;
@@ -189,6 +210,8 @@ main .blog-content-text {
   width: auto;
   height: 200px;
 }
+
+/* Add Blog Form */
 
 .add-blog {
   width: 560px;
@@ -213,7 +236,7 @@ main .blog-content-text {
   font-size: 16px;
 }
 
-.add-blog .content {
+.content {
   margin: 10px auto;
   float: left;
 
@@ -243,8 +266,54 @@ main:after {
   clear: both;
 }
 
+/* Main End */
+
+/* Footer */
+
 footer {
   margin: 0px;
   padding: 10px;
   text-align: center;
 }
+
+/* Footer End */
+
+/* MAIN PAGE END */
+
+/* ABOUT PAGE START */
+
+.about,
+.contact {
+  margin: 10%;
+}
+
+/* ABOUT PAGE END */
+
+/* CONTACT PAGE START */
+
+
+
+/* CONTACT PAGE END */
+
+/* LOGIN PAGE START */
+
+.login {
+  margin: 5% auto;
+  width: 50%;
+  background: lightgreen;
+  padding: 10px;
+}
+
+.login-form {
+  padding: 10px;
+}
+
+.login input {
+  padding: 10px;
+}
+
+/* LOGIN PAGE END */
+
+/* SIGNUP PAGE START */
+
+/* SIGNUP PAGE END */
